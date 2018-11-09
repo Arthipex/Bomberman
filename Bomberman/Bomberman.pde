@@ -30,6 +30,10 @@ void setup(){
 void draw(){
   background(40);
   //drawData();
+  player1.wallList = world.wallList;
+  player1.blockList = world.blockList;
+  player2.wallList = world.wallList;
+  player2.blockList = world.blockList;
   world.update();
 }
 
@@ -59,16 +63,16 @@ void keyPressed(){
   }  
     switch(keyChar){
     case 'a':
-      player1.setVelocity('a', wallList, blockList);
+      player1.keystroke = 'a';
       break;
     case 's':
-      player1.setVelocity('s', wallList, blockList);
+      player1.keystroke = 's';
       break;
     case 'd':
-      player1.setVelocity('d', wallList, blockList);
+      player1.keystroke = 'd';
       break;
     case 'w':
-      player1.setVelocity('w', wallList, blockList);
+      player1.keystroke = 'w';
       break;
     }
 }
