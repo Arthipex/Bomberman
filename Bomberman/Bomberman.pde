@@ -11,7 +11,7 @@ ArrayList<Wall> wallList;
 int tileSize = 1500/15;
 
 // game speed
-int speed = 60;
+int speed = 60; //60
 
 
 
